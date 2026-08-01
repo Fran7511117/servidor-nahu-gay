@@ -1,0 +1,112 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 100.110.168.0
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1785442900192
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1785626238984
+  login: 1785626116168
+money: '0'
+last-account-name: FR4NNNN
+homes:
+  home:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: 13.049711724608871
+    y: 64.0
+    z: 97.32055115028076
+    yaw: -60.749969482421875
+    pitch: 24.15011978149414
+  aldea:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: 13.049711724608871
+    y: 64.0
+    z: 97.32055115028076
+    yaw: -60.749969482421875
+    pitch: 24.15011978149414
+  bleiz:
+    world: b3ecc3d0-2f1b-40e0-a654-ad0a4cbf1e2d
+    world-name: world_nether
+    x: 90.51336965110049
+    y: 69.0
+    z: -289.30000001192093
+    yaw: 170.1151123046875
+    pitch: 23.700031280517578
+  endportal:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: 1779.8880085529856
+    y: 38.0
+    z: 120.34126983557786
+    yaw: 1.863525390625
+    pitch: -3.8998351097106934
+  ender:
+    world: 2d3c5adf-1724-4f33-b06e-88aa4406b6b2
+    world-name: world_the_end
+    x: 6.5588740299791475
+    y: 67.0
+    z: 4.265626084996391
+    yaw: 144.3160400390625
+    pitch: 1.5001550912857056
+  aldea1:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: -513.4810176608537
+    y: 88.0
+    z: 199.7428598337532
+    yaw: -178.796875
+    pitch: 36.90009689331055
+  miiina:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: -586.0751273750225
+    y: -39.0
+    z: 48.52580895190416
+    yaw: 45.889404296875
+    pitch: 27.00000762939453
+  totem:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: -325.497198315409
+    y: 92.5625
+    z: 1346.0731189764801
+    yaw: 173.3998565673828
+    pitch: 40.65003204345703
+  raids:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: -470.7579069950956
+    y: 69.0
+    z: -293.30000001192093
+    yaw: 125.104248046875
+    pitch: 14.10009479522705
+logoutlocation:
+  world: aacd8986-1241-4298-b855-3729223443f1
+  world-name: world
+  x: -495.33324287107655
+  y: 95.0
+  z: 167.49009688152415
+  yaw: 101.8515625
+  pitch: 3.900007724761963
+lastlocation:
+  world: aacd8986-1241-4298-b855-3729223443f1
+  world-name: world
+  x: -386.60762723794693
+  y: 66.0
+  z: 172.38902566576277
+  yaw: 102.30239868164062
+  pitch: -14.550033569335938

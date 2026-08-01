@@ -1,0 +1,80 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 100.93.233.108
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1785450748358
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1785431487522
+  login: 1785431499945
+money: '0'
+last-account-name: elnahuuu1212122
+logoutlocation:
+  world: aacd8986-1241-4298-b855-3729223443f1
+  world-name: world
+  x: -553.0438934607484
+  y: 91.24918707874468
+  z: 174.63595934120292
+  yaw: -110.80517578125
+  pitch: 23.77691078186035
+lastlocation:
+  world: aacd8986-1241-4298-b855-3729223443f1
+  world-name: world
+  x: 14.408910357439606
+  y: 64.0
+  z: 98.24380631224665
+  yaw: -57.04804611206055
+  pitch: 40.53349304199219
+homes:
+  home:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: 8.338432786838002
+    y: 64.0
+    z: 86.88841062127483
+    yaw: -19.736154556274414
+    pitch: 7.933098793029785
+  aldea:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: -513.9296473191965
+    y: 88.0
+    z: 199.59640209618718
+    yaw: -160.38278198242188
+    pitch: 33.060394287109375
+  bosque:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: -711.9877249712299
+    y: 89.0
+    z: -1074.7628269278744
+    yaw: -85.95147705078125
+    pitch: 35.742000579833984
+  totems:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: -322.40247346532533
+    y: 65.0
+    z: 1347.5346890452813
+    yaw: 115.87367248535156
+    pitch: 57.93156051635742
+  malpresagio:
+    world: aacd8986-1241-4298-b855-3729223443f1
+    world-name: world
+    x: -454.13085136447313
+    y: 64.0
+    z: -292.32423460581657
+    yaw: -87.8055419921875
+    pitch: 15.780320167541504

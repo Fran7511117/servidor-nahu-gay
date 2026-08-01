@@ -1,0 +1,131 @@
+# GraveChestNO - Config
+# language: "es" or "en"
+language: en
+
+# Prefix used in messages (color codes with &)
+prefix: '&8[&6GraveChestNO&8]&r '
+
+# Access mode for graves:
+# PRIVATE = only the owner can open/claim
+# PUBLIC  = everyone can open/loot (shift-claim stays owner-only)
+# KILLER  = only owner + killer can open (shift-claim stays owner-only)
+access_mode: PRIVATE
+
+# If another plugin (claims/protections) blocks chest interaction, you can allow a bypass
+# ONLY for grave chests:
+# - owner: allow the grave owner to open/claim their grave even inside protected areas
+# - killer: allow the killer (KILLER mode) to open the grave even inside protected areas
+# - public: allow everyone to open graves inside protected areas (NOT recommended)
+# - admin: allow players with gravechestno.admin to bypass protections
+protection_bypass:
+  owner: true
+  killer: true
+  public: false
+  admin: true
+
+# Combat killer window (seconds). If you die by environment (void/lava/fall) within this time after
+# being hit by a player, that player is considered the killer (last hit wins).
+# Set to 0 to disable.
+combat_killer_window_seconds: 15
+
+# Price to teleport to your grave with /grave tp
+# 0 = free, >0 = withdraw from the player's economy balance (Vault)
+teleport_price: 0.0
+# Delay before teleport happens (seconds)
+teleport_delay_seconds: 3
+# Cancel teleport if the player changes block position during the delay
+teleport_cancel_on_move: true
+# Cancel teleport if the player receives damage during the delay
+teleport_cancel_on_damage: true
+
+# If true: the player must have permission 'gravechestno.use' to get a grave on death
+require_use_permission: true
+
+# XP storage percent (0-100).
+# 0 = do not store any XP (vanilla exp drops).
+# 100 = store all the player's XP in the grave (no exp drops).
+xp_save_percent: 0
+
+# If true: create a physical chest block. (Recommended: true)
+place_chest_block: true
+
+# Time in seconds before a grave is automatically destroyed.
+# Default: 7200 (2 hours). Set to 0 to disable auto-destruction.
+grave_expire_seconds: 7200
+
+# Maximum graves stored per player at the same time.
+# Older graves are removed first when the limit is exceeded.
+max_graves_per_player: 20
+
+# How far to search for a safe spot if the death is in lava / unsafe
+safe_search_radius: 10
+
+# Vertical range to search up/down when looking for a safe grave spot.
+# This prevents graves from jumping to the Nether roof / overworld surface when you die in caves.
+safe_search_vertical: 8
+
+# Lava deaths: if a strictly-safe spot is not found nearby, the plugin can try an "edge" search.
+# This is useful for very large lava lakes (Nether).
+# - search_radius: how far to look for a lava edge.
+# - max_distance: how close the grave must be to lava to count as an edge (1 = directly next to lava).
+lava_edge_fallback_enabled: true
+lava_edge_search_radius: 32
+lava_edge_search_vertical: 8
+lava_edge_max_distance: 2
+
+# Vertical range used for VOID relocations (spawn / End main island).
+void_search_vertical: 64
+
+# End: avoid placing graves too close to the central bedrock fountain (dragon egg area).
+end_fountain_avoid_radius: 8
+
+# End: how far (in blocks) to search around end_main_island_target when relocating from the void.
+end_main_island_search_radius: 48
+
+# Void relocation: put graves in THE_END at/near (0, ?, 0) main island
+# (The plugin will search a safe spot near the target.)
+end_main_island_target:
+  x: 0
+  y: 70
+  z: 0
+
+# Hologram settings
+hologram:
+  enabled: true
+  # true = one lightweight TextDisplay per grave; false = legacy ArmorStands.
+  use_text_display: true
+  # Height above the chest block center
+  base_height: 2.2
+  # Line spacing
+  line_spacing: 0.25
+# Performance safeguards. These defaults prioritize stable TPS.
+performance:
+  # Wait this many ticks after the latest change before serializing graves.yml.
+  # Multiple deaths/claims during the window are combined into one save.
+  save_debounce_ticks: 200
+  
+  # Keep graves.yml.bak before replacing the live file.
+  keep_graves_backup: true
+  
+  # Maintenance is spread across ticks instead of scanning every grave at once.
+  # 20 ticks = one small batch per second.
+  maintenance_interval_ticks: 20
+  maintenance_graves_per_run: 20
+  
+  # Hard caps protect TPS even if the search values above are configured too high.
+  safe_search_max_horizontal_radius: 64
+  safe_search_max_vertical_radius: 128
+  
+  # Maximum safe-location candidates checked during one death event. This is a
+  # shared budget for normal, lava-edge, void, and End searches.
+  safe_search_max_candidates: 1200
+  
+  # Never synchronously load distant chunks while searching for a grave spot.
+  safe_search_loaded_chunks_only: true
+  
+  # Loaded chunks checked for orphan grave blocks/holograms per tick.
+  # Keep this low on servers with fast exploration or many chunk loads.
+  chunk_cleanup_scans_per_tick: 1
+  
+  # Holograms restored after startup/chunk load per server tick.
+  hologram_restores_per_tick: 4

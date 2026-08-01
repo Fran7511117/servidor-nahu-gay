@@ -1,0 +1,86 @@
+messages:
+  no-permission: '{prefix}&cYou don''t have permission.'
+  not-a-player: '{prefix}&cPlayers only.'
+  grave-created: '{prefix}&aYour grave was created at &e{gworld} &7(&f{gx}&7, &f{gy}&7,
+    &f{gz}&7)&a.'
+  grave-created-with-death: '{prefix}&aYou died at &e{dworld} &7(&f{dx}&7, &f{dy}&7,
+    &f{dz}&7)&a. Your grave is at &e{gworld} &7(&f{gx}&7, &f{gy}&7, &f{gz}&7)&a.'
+  grave-relocated-lava: '{prefix}&eYour grave was relocated due to lava. New position:
+    &e{gworld} &7(&f{gx}&7, &f{gy}&7, &f{gz}&7)&e.'
+  grave-relocated-void: '{prefix}&eYour grave was relocated due to the void. New position:
+    &e{gworld} &7(&f{gx}&7, &f{gy}&7, &f{gz}&7)&e.'
+  grave-not-found: '{prefix}&cYou don''t have an active grave.'
+  grave-only-owner: '{prefix}&cOnly the grave owner can open it.'
+  grave-claimed: '{prefix}&aYou claimed your items. Items left in grave: &e{left}&a.'
+  grave-xp-claimed: '{prefix}&aYou recovered &e{xp}&a XP points.'
+  grave-removed: '{prefix}&7Your grave was removed.'
+  grave-tp-free: '{prefix}&aTeleported to your grave.'
+  grave-tp-paid: '{prefix}&aTeleported to your grave. Cost: &e{price}&a.'
+  grave-tp-no-economy: '{prefix}&cNo economy (Vault) found. Set teleport_price to
+    0.'
+  grave-tp-no-money: '{prefix}&cNot enough money. Cost: &e{price}&c.'
+  grave-where: '{prefix}&aYour grave: &e{gworld} &7(&f{gx}&7, &f{gy}&7, &f{gz}&7)&a.'
+  grave-remove-usage: '{prefix}&eUsage: /grave remove <player>'
+  grave-remove-not-found: '{prefix}&cPlayer &e{player}&c does not have an active grave.'
+  grave-remove-done: '{prefix}&aRemoved grave of &e{player}&a.'
+  reloaded: '{prefix}&aConfiguration reloaded.'
+  grave-cleanup-done: '{prefix}&aCleanup completed. Invalid graves: &e{graves}&a,
+    ghost holograms: &e{holograms}&a.'
+  help:
+  - '{prefix}&e/grave tp &7- Teleport to your grave'
+  - '{prefix}&e/grave where &7- Show coordinates'
+  - '{prefix}&e/grave reload &7- Reload (admin)'
+  - '{prefix}&e/grave cleanup &7- Clean ghost holograms (admin)'
+  grave-only-owner-or-killer: '{prefix}&cOnly the owner or the killer can open this
+    grave.'
+  grave-no-sneak-open: '{prefix}&cYou can''t open graves while sneaking. Release SHIFT.'
+  grave-shift-owner-only: '{prefix}&cQuick-claim (SHIFT) can only be used by the owner.'
+  grave-tp-start: '{prefix}&aTeleporting in &e{seconds}&a seconds. Don''t move.'
+  grave-tp-already: '{prefix}&cYou already have a teleport in progress.'
+  grave-tp-cancel-move: '{prefix}&cTeleport cancelled due to movement.'
+  grave-tp-cancel-damage: '{prefix}&cTeleport cancelled due to taking damage.'
+  grave-tp-failed: '{prefix}&cCould not start the teleport.'
+hologram:
+- '&6☠ &fGrave of &e{player}'
+- '&7Cause: &c{cause}'
+- '&7XP: &a{xp}'
+- '&7Expires in: &e{expires_in}'
+
+death_causes:
+  UNKNOWN: Unknown
+  ENTITY_ATTACK: Attack
+  PROJECTILE: Projectile
+  FALL: Fall
+  VOID: Void
+  LAVA: Lava
+  FIRE: Fire
+  FIRE_TICK: Fire
+  DROWNING: Drowning
+  SUFFOCATION: Suffocation
+  SUICIDE: Suicide
+  KILL: /kill
+  BLOCK_EXPLOSION: Explosion
+  ENTITY_EXPLOSION: Explosion
+  MAGIC: Magic
+  POISON: Poison
+  WITHER: Wither
+  STARVATION: Starvation
+  LIGHTNING: Lightning
+  CONTACT: Contact
+  HOT_FLOOR: Magma
+  FALLING_BLOCK: Falling block
+  CRAMMING: Cramming
+  DRAGON_BREATH: Dragon breath
+  FLY_INTO_WALL: Impact
+  FREEZE: Freeze
+  SONIC_BOOM: Sonic boom
+
+entities:
+  UNKNOWN: Unknown
+  ZOMBIFIED_PIGLIN: Zombified Piglin
+  ENDER_DRAGON: Ender Dragon
+  WITHER_SKELETON: Wither Skeleton
+  MAGMA_CUBE: Magma Cube
+  CAVE_SPIDER: Cave Spider
+  ELDER_GUARDIAN: Elder Guardian
+  PIGLIN_BRUTE: Piglin Brute
